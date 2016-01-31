@@ -48,13 +48,14 @@ backgroundimg = pygame.transform.scale(backgroundimg,(screen_width, screen_heigh
 # backgroundimgRect = backgroundimg.get_rect()
 
 #movement adjusting parameters
+f = 0.4
 move_increment = int(screen_height * 0.01)
-bullet_velosity = int(move_increment * 1.7)
-target_velosity = int(move_increment * 0.9)
-target_velosity_mixed = int(move_increment * 0.3)
+bullet_velosity = int(move_increment * 1.3)
+target_velosity = int(move_increment) * 0.2
+target_velosity_mixed = int(move_increment) * 0.15
 loop_mixed_get_shot = 170   #190 # the bigger the easier
-reset_val_for_another_turn = 180
-reset_val_for_another_turn_later = 90
+reset_val_for_another_turn = 200
+reset_val_for_another_turn_later = 120
 bullet_limit = 2
 
 p1_x_max = int(screen_width * 0.4)
